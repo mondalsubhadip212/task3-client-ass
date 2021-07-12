@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--    bootstrap css cdn-->
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="CSS/index.css">
+
+    <title>Task 1</title>
+</head>
+<body class="body">
+    <!-- home page top blank portion -->
+    <div class="row" style="height: 40px;">
+    </div>
+    <!-- home page top blank portion -->
+    <div class="row al" style="height: 40px;justify-content: center;margin-bottom: 20px;">
+    </div>
+
+    <!-- middle file upload section -->
+    <div class="row" style="justify-content: center;margin-bottom: 30px;">
+        <form class="form-inline col-6" style="justify-content: center;">
+          <div class="form-group mx-sm-3 mb-2">
+            <input type="file"
+            class="form-control" 
+            id="file_input" 
+            placeholder="Upload .xlsx file only"
+            accept=".xlsx"
+            >
+          </div>
+          <button type="button" class="btn btn-primary mb-2" id="upload_button">Upload</button>
+        </form>
+    </div>
+
+    <!-- table show hide -->
+    <div class="row" style="justify-content: center;display: none;margin-bottom: 30px;" id="table">
+      <div class="col-4" style="justify-content:center;">
+        <table class="table table-dark">
+          <thead>
+            <tr id="index">
+              <th scope="col">Index</th>
+              <th scope="col">Value</th>
+            </tr>
+          </thead>
+          <tbody id="values">
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <!-- pie chart show -->
+    <!-- <div class="row" style="justify-content: center;">
+      <div class="mychart">
+        <canvas id="pie_chart" style="height: 500px;width: 500px;">
+        </canvas>
+      </div>
+    </div> -->
+
+</body>
+
+    <!-- chart js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.min.js"
+    integrity="sha512-5vwN8yor2fFT9pgPS9p9R7AszYaNn0LkQElTXIsZFCL7ucT8zDCAqlQXDdaqgA1mZP47hdvztBMsIoFxq/FyyQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <!--    jquery cdn-->
+  <script src="./JS/jquery.js"></script>
+
+  <!-- bootstrap javascript cdn-->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+  
+  <!-- custom javascript -->
+  <script src="./JS/index.js"></script>
+</html>
